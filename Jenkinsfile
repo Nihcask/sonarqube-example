@@ -1,9 +1,9 @@
 pipeline{
-    agent {label 'jfrog'}
+    agent any
     stages{
        stage('Git Checkout Stage'){
             steps{
-                git branch: 'main', url: 'https://github.com/artisantek/sonarqube-example.git'
+                git branch: 'main', url: 'https://github.com/Nihcask/sonarqube-example.git'
             }
          }        
        stage('Build Stage'){
